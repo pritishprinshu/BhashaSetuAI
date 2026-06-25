@@ -1,23 +1,24 @@
-# Build Artifacts
-release/
-dist/
-build/
-
-# Packaged files
-*.zip
-*.dmg
-*.exe
-*.pkg
-
-# Virtual Environments
+# Virtual environments
 venv/
 xtts_env/
 
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
 
-# Media Outputs
+# Build artifacts
+build/
+dist/
+release/
+
+# Installer packages
+*.zip
+*.exe
+*.dmg
+*.pkg
+
+# Generated outputs
 outputs/
 uploads/
 
@@ -27,3 +28,9 @@ uploads/
 # IDE
 .vscode/
 .idea/
+
+# Environment
+.env
+
+# Streamlit cache
+.streamlit/test.wav
