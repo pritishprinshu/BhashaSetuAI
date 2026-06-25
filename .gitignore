@@ -1,21 +1,29 @@
+# Build Artifacts
+release/
+dist/
+build/
+
+# Packaged files
+*.zip
+*.dmg
+*.exe
+*.pkg
+
+# Virtual Environments
 venv/
+xtts_env/
+
+# Python
 __pycache__/
 *.pyc
-.DS_Store
 
-build/
-dist/
-release/
-
+# Media Outputs
 outputs/
 uploads/
 
-*.wav
-*.mp3
-*.mp4
-*.mov
+# macOS
+.DS_Store
 
-BhashaSetuAI_Mac.zip
-
-.cache/
-huggingface/
+# IDE
+.vscode/
+.idea/
