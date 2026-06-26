@@ -7,7 +7,18 @@ from piper import PiperVoice
 VOICE_MAP = {
     "en": "models/voices/en_US-lessac-medium.onnx",
     "hi": "models/voices/hi_IN-rohan-medium.onnx",
-    "mr": "models/voices/hi_IN-rohan-medium.onnx"
+
+    "mr": "models/voices/hi_IN-rohan-medium.onnx",
+
+    "gu": "models/voices/hi_IN-rohan-medium.onnx",
+    "pa": "models/voices/hi_IN-rohan-medium.onnx",
+    "bn": "models/voices/hi_IN-rohan-medium.onnx",
+    "or": "models/voices/hi_IN-rohan-medium.onnx",
+    "kn": "models/voices/hi_IN-rohan-medium.onnx",
+    "ta": "models/voices/hi_IN-rohan-medium.onnx",
+    "te": "models/voices/hi_IN-rohan-medium.onnx",
+    "ml": "models/voices/hi_IN-rohan-medium.onnx",
+    "ur": "models/voices/hi_IN-rohan-medium.onnx"
 }
 
 _loaded_voices = {}

@@ -1,21 +1,36 @@
+# Virtual environments
 venv/
-__pycache__/
-*.pyc
-.DS_Store
+xtts_env/
 
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Build artifacts
 build/
 dist/
 release/
 
+# Installer packages
+*.zip
+*.exe
+*.dmg
+*.pkg
+
+# Generated outputs
 outputs/
 uploads/
 
-*.wav
-*.mp3
-*.mp4
-*.mov
+# macOS
+.DS_Store
 
-BhashaSetuAI_Mac.zip
+# IDE
+.vscode/
+.idea/
 
-.cache/
-huggingface/
+# Environment
+.env
+
+# Streamlit cache
+.streamlit/test.wav

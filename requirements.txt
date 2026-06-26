@@ -1,12 +1,53 @@
-streamlit>=1.35.0
-faster-whisper>=1.2.1
-transformers>=4.46.2
-torch>=2.3.0
+```text
+# ============================
+# BhashaSetuAI Requirements
+# Python 3.11 Recommended
+# ============================
+
+# Web UI
+streamlit>=1.35.0,<2.0
+
+# AI / Deep Learning
+torch>=2.2.0
+torchaudio>=2.2.0
+torchvision>=0.17.0
+
+# Speech Recognition
+faster-whisper>=1.0.3
+ctranslate2>=4.4.0
+
+# Translation
+transformers>=4.42.0
 sentencepiece>=0.2.0
-huggingface-hub>=0.25.0
-safetensors>=0.4.5
-tokenizers>=0.20.0
-numpy>=1.26.0
+sacremoses>=0.1.1
+accelerate>=0.33.0
+
+# XTTS
+TTS>=0.22.0
+
+# Audio
+pydub>=0.25.1
+soundfile>=0.12.1
+librosa>=0.10.2
+resampy>=0.4.3
+
+# Video
+moviepy>=1.0.3
+opencv-python>=4.10.0.84
+imageio>=2.34.0
+imageio-ffmpeg>=0.5.1
+
+# Numerical
+numpy>=1.26.4
+scipy>=1.13.1
+
+# Utilities
+tqdm>=4.66.4
+requests>=2.32.3
+PyYAML>=6.0.1
+packaging>=24.1
+python-dotenv>=1.0.1
+
+# Optional
 ffmpeg-python>=0.2.0
-srt>=3.5.3
-piper-tts>=1.2.0
+```

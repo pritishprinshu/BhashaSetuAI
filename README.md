@@ -1,102 +1,203 @@
-# 🌐 BhashaSetu AI
+# 🌍 BhashaSetuAI
 
-## Offline Multilingual Translation Platform
+> **Offline Multilingual Audio & Video Translation Platform for Indian Languages**
 
-BhashaSetu AI is an offline AI-powered translation platform that converts speech and video content across multiple Indian languages without requiring internet connectivity.
+<p align="center">
 
-### Problem Statement
+![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![Whisper](https://img.shields.io/badge/OpenAI-Whisper-green)
+![NLLB](https://img.shields.io/badge/Meta-NLLB-orange)
+![XTTS](https://img.shields.io/badge/Coqui-XTTS-purple)
+![Offline](https://img.shields.io/badge/Mode-Offline-success)
 
-Language barriers prevent millions of people from accessing:
-
-* Government services
-* Agricultural advisory systems
-* Educational content
-* Healthcare information
-
-Most existing translation platforms depend heavily on internet connectivity.
-
-BhashaSetu AI solves this by providing a completely offline multilingual communication platform.
+</p>
 
 ---
 
-## Features
+## 📌 Overview
 
-✅ Speech-to-Text Conversion
+BhashaSetuAI is an **offline multilingual Audio & Video Translation Platform** designed to break language barriers in **education, healthcare, agriculture, and government services**.
 
-✅ Language Detection
+The system automatically:
 
-✅ Marathi ↔ Hindi ↔ English Translation
+* 🎤 Converts speech to text
+* 🌐 Detects the spoken language
+* 🔄 Translates content into another Indian language
+* 🔊 Generates natural translated speech
+* 🎬 Produces a translated audio or video
 
-✅ Offline Voice Generation
-
-✅ Subtitle Generation
-
-✅ Audio Translation
-
-✅ Video Translation
-
-✅ Fully Offline Processing
+No internet connection is required after model setup.
 
 ---
 
-## Technology Stack
+# ✨ Features
 
-* Streamlit
-* Faster Whisper
-* NLLB Translation Models
-* Piper TTS
-* FFmpeg
-* Python
-
----
-
-## Architecture
-
-Audio / Video Input
-
-↓
-
-Speech Recognition (Whisper)
-
-↓
-
-Translation Engine (NLLB)
-
-↓
-
-Voice Synthesis (Piper)
-
-↓
-
-Translated Audio + Subtitles
+* 🎤 Offline Speech Recognition (Whisper)
+* 🌐 Automatic Language Detection
+* 🔄 Translation using Meta NLLB-200
+* 🔊 Natural Voice Generation (XTTS v2)
+* 🎵 Piper TTS Support
+* 🎬 Audio & Video Translation
+* 📜 Subtitle Generation
+* ⚡ Live Translation Preview
+* 🔒 Privacy First (Offline Processing)
 
 ---
 
-## Installation
+# 🏗 System Architecture
+
+```text
+                User
+                  │
+                  ▼
+          Streamlit Web UI
+                  │
+                  ▼
+        Upload Audio / Video
+                  │
+                  ▼
+     FFmpeg Audio Extraction
+                  │
+                  ▼
+       Whisper Speech-to-Text
+                  │
+                  ▼
+      Language Detection
+                  │
+                  ▼
+        NLLB Translation
+                  │
+                  ▼
+        XTTS / Piper TTS
+                  │
+                  ▼
+      FFmpeg Video Rendering
+                  │
+                  ▼
+      Download Translated Output
+```
+
+---
+
+# 🌍 Supported Languages
+
+* English
+* Hindi
+* Marathi
+* Gujarati
+* Punjabi
+* Bengali
+* Tamil
+* Telugu
+* Kannada
+* Malayalam
+* Odia
+* Urdu
+
+---
+
+# 💻 Tech Stack
+
+| Component            | Technology      |
+| -------------------- | --------------- |
+| Frontend             | Streamlit       |
+| STT                  | Whisper         |
+| Translation          | NLLB-200        |
+| TTS                  | XTTS v2 / Piper |
+| Video Processing     | FFmpeg          |
+| Programming Language | Python          |
+
+---
+
+# 🚀 Installation
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/pritishprinshu/BhashaSetuAI.git
-
+git clone https://github.com/<your-username>/BhashaSetuAI.git
 cd BhashaSetuAI
+```
 
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+macOS/Linux:
+
+```bash
+source venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
+Run the application:
+
+```bash
 streamlit run app.py
 ```
 
 ---
 
-## Use Cases
+# 📂 Project Structure
 
-* Government Citizen Services
-* Digital India Mission
-* Agricultural Technology Platforms
-* Rural Accessibility
-* Multilingual Communication
+```text
+BhashaSetuAI/
+│
+├── app.py
+├── backend/
+├── models/
+├── assets/
+├── docs/
+├── scripts/
+├── uploads/
+├── outputs/
+└── requirements.txt
+```
 
 ---
 
-## Team
+# 🔒 Privacy
 
-BhashaSetu AI
-Hackathon Project 2025
+All processing happens locally on the user's machine.
+
+No audio, video, or transcript is uploaded to external servers.
+
+---
+
+# 🛣 Roadmap
+
+* [ ] GPU Acceleration
+* [ ] Speaker Diarization
+* [ ] Real-Time Translation
+* [ ] Subtitle Editing
+* [ ] Docker Deployment
+* [ ] Windows Installer
+* [ ] Executable (.exe)
+* [ ] Mobile Version
+
+---
+
+# 👨‍💻 Author
+
+**Pritish Prinshu**
+
+AI Engineer | Multilingual AI | Offline Translation Systems
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
