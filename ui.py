@@ -5,17 +5,14 @@ def load_ui():
     st.markdown("""
     <style>
 
-    .stApp {
-        background-color: #F5F7FA;
-    }
-
     .main .block-container {
         max-width: 1300px;
         padding-top: 1rem;
     }
 
     .hero {
-        background: white;
+        background-color: var(--secondary-background-color);
+        color: var(--text-color);
         border-radius: 15px;
         padding: 30px;
         margin-bottom: 20px;
@@ -23,25 +20,39 @@ def load_ui():
         box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
-    .hero h1 {
-        color: #1565C0;
-    }
-
-    .hero h3 {
-        color: #2E7D32;
-    }
-
+    .hero h1,
+    .hero h2,
+    .hero h3,
     .hero p {
-        color: #555;
+        color: var(--text-color) !important;
     }
 
     .info-card {
-        background: white;
+        background-color: var(--secondary-background-color);
+        color: var(--text-color) !important;
+
         padding: 15px;
         border-radius: 12px;
         text-align: center;
-        border: 1px solid #E5E7EB;
+
+        border: 1px solid rgba(128,128,128,0.2);
+
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+        font-size: 18px;
+        font-weight: 600;
+
+        transition: all 0.3s ease;
+    }
+
+    .info-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .info-card b,
+    .info-card div,
+    .info-card span {
+        color: var(--text-color) !important;
     }
 
     .stButton > button {
