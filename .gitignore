@@ -19,3 +19,7 @@ BhashaSetuAI_Mac.zip
 
 .cache/
 huggingface/
+xtts_env/
+venv/
+__pycache__/
+*.pyc
